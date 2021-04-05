@@ -16,4 +16,10 @@ describe('Cypress basic', () => {
         //TODO escrever o title em um campo de texto
 
     })
+
+    it.only('Should find and interact with an element', () => {
+        cy.visit('http://wcaquino.me/cypress/componentes.html')
+        cy.get('#buttonSimple').click()
+    })
+
 })
